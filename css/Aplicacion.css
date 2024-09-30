@@ -1,48 +1,86 @@
 /* Estilos generales */
 body {
-    display: flex; /* Usamos flexbox para centrar el contenido */
-    justify-content: center; /* Centrado horizontal */
-    align-items: center; /* Centrado vertical */
-    height: 100vh; /* Ocupa toda la altura de la ventana del navegador */
-    margin: 0; /* Elimina los márgenes predeterminados */
-    font-family: Arial, sans-serif; /* Fuente estándar */
-    background-color: #f4f4f4; /* Fondo gris claro */
-    color: #333; /* Texto de color gris oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Cambiado a min-height para evitar problemas en dispositivos con barras de navegación */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 1rem; /* Añadimos un padding para dar espacio en pantallas más pequeñas */
+    box-sizing: border-box; /* Asegura que el padding no expanda el tamaño del contenedor */
 }
 
 /* Estilos del contenedor */
 .contenedor {
-    text-align: center; /* Centra el contenido dentro del contenedor */
-    background-color: white; /* Fondo blanco para el contenedor */
-    padding: 2rem; /* Espaciado interno */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar un efecto de elevación */
+    text-align: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px; /* Limitamos el ancho máximo del contenedor */
+    width: 100%; /* El contenedor ocupa el 100% del ancho disponible */
+    box-sizing: border-box; /* Asegura que el padding no desborde el contenedor */
 }
 
 /* Estilos del título (h1) */
 h1 {
-    font-size: 2.5rem; /* Tamaño grande para el título */
-    margin-bottom: 1rem; /* Espacio debajo del título */
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 /* Estilos del párrafo (p) */
 p {
-    font-size: 1.2rem; /* Tamaño de texto para el párrafo */
-    margin-bottom: 2rem; /* Espaciado debajo del párrafo */
+    font-size: 1rem;
+    margin-bottom: 2rem;
 }
 
 /* Estilos del botón (enlace) */
 a {
-    background-color: #333; /* Fondo oscuro */
-    color: white; /* Texto blanco */
-    padding: 0.75rem 1.5rem; /* Espaciado interno en el botón */
-    border: none; /* Sin bordes */
-    border-radius: 4px; /* Bordes ligeramente redondeados */
-    cursor: pointer; /* Cambia el cursor a mano cuando se pasa sobre el enlace */
-    font-size: 1rem; /* Tamaño de fuente estándar para el botón */
+    background-color: #333;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    display: inline-block; /* Hace que el botón respete su padding y tamaño */
 }
 
 /* Efecto hover para el botón */
 a:hover {
-    background-color: #555; /* Cambia el color de fondo del botón al pasar el mouse */
+    background-color: #555;
+}
+
+/* Media Queries para pantallas más pequeñas (smartphones y tablets) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem; /* Tamaño de fuente reducido para pantallas más pequeñas */
+    }
+
+    p {
+        font-size: 1rem; /* Tamaño de fuente ligeramente más pequeño */
+    }
+
+    a {
+        font-size: 0.9rem; /* Reducimos el tamaño del botón */
+        padding: 0.6rem 1.2rem; /* Ajustamos el padding del botón */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem; /* Tamaño de fuente más pequeño para pantallas muy pequeñas */
+    }
+
+    p {
+        font-size: 0.9rem; /* Reducimos el tamaño de los párrafos */
+    }
+
+    a {
+        font-size: 0.8rem; /* Tamaño más pequeño para botones */
+        padding: 0.5rem 1rem; /* Ajustamos más el padding */
+    }
 }

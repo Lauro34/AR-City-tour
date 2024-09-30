@@ -18,6 +18,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; /* Para que el menú se ajuste mejor en pantallas pequeñas */
 }
 
 nav ul li {
@@ -43,7 +44,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 0px; /* Cambiar a un valor mayor si quieres que sea visible */
+    height: auto; /* Elimina el valor fijo de altura para adaptarse mejor */
 }
 
 /* Estilos para la sección de información */
@@ -53,31 +54,36 @@ footer {
     background-color: #ffffff;
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil para resaltar el contenedor */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
 }
 
 .Informacion h2 {
-    color: #2c3e50; /* Color del título */
-    font-size: 28px; /* Tamaño del texto del título */
+    color: #2c3e50;
+    font-size: 28px;
     margin-top: 0;
-    border-bottom: 2px solid #000000; /* Línea debajo del título */
+    border-bottom: 2px solid #000000;
     padding-bottom: 10px;
 }
 
 .Informacion p {
-    color: #555; /* Color del texto */
-    font-size: 18px; /* Tamaño del texto */
-    line-height: 1.8; /* Espaciado entre líneas */
+    color: #555;
+    font-size: 18px;
+    line-height: 1.8;
     margin-bottom: 30px;
-    text-align: justify; /* Alineación justificada */
+    text-align: justify;
 }
 
 #Mision {
-    margin-bottom: 40px; /* Espacio adicional debajo del párrafo de misión */
+    margin-bottom: 40px;
 }
 
 /* Estilos para pantallas más pequeñas */
 @media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Cambia el menú a columna en pantallas pequeñas */
+    }
+
     .Informacion {
         padding: 20px;
     }
@@ -88,5 +94,24 @@ footer {
 
     .Informacion p {
         font-size: 16px;
+    }
+}
+
+/* Estilos adicionales para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    nav ul li {
+        margin: 0.5rem 0; /* Menú más espaciado verticalmente en pantallas pequeñas */
+    }
+
+    .Informacion {
+        padding: 15px; /* Reduce el padding en dispositivos pequeños */
+    }
+
+    .Informacion h2 {
+        font-size: 22px; /* Título más pequeño en pantallas pequeñas */
+    }
+
+    .Informacion p {
+        font-size: 14px; /* Texto más pequeño en pantallas pequeñas */
     }
 }

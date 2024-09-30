@@ -43,7 +43,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 0px; /* Actualmente no visible debido a este valor */
+    height: auto; /* Cambiado para que se ajuste dinámicamente */
 }
 
 /* Estilos del título */
@@ -52,28 +52,28 @@ h1 {
     margin-bottom: 40px;
 }
 
-/* Estilos de las secciones flotantes: Problema, Solución, Producto */
+/* Estilos de las secciones: Problema, Solución, Producto */
 .Problema, .Solucion, .Producto {
     background-color: #ffffff;
     border: 2px solid #ddd;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-bottom: 20px;
-    width: 40%; /* Cada caja ocupará el 40% del ancho */
+    width: 100%; /* Cambiado para ocupar el 100% del ancho en pantallas pequeñas */
+    max-width: 400px; /* Máximo ancho para mantener un diseño limpio */
+    box-sizing: border-box;
 }
 
-/* Flotado de las cajas */
-.Problema {
-    float: right; /* Flota a la derecha */
-}
-
-.Solucion {
-    float: left; /* Flota a la izquierda */
-}
-
-.Producto {
-    float: right; /* Flota a la derecha */
+/* Distribución con flexbox */
+.seccion-contenedor {
+    display: flex;
+    justify-content: space-between; /* Distribuye las cajas a lo largo del contenedor */
+    flex-wrap: wrap; /* Permite que las cajas se ajusten en pantallas pequeñas */
+    gap: 20px; /* Espacio entre las cajas */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centra el contenedor */
 }
 
 /* Estilos para los encabezados */
@@ -84,12 +84,30 @@ h2 {
 
 /* Estilos de los párrafos */
 p {
-    line-height: 1.6; /* Espaciado entre líneas */
+    line-height: 1.6;
 }
 
-/* Clearfix para los elementos flotantes */
-body::after {
-    content: "";
-    display: table;
-    clear: both;
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .Problema, .Solucion, .Producto {
+        width: 100%; /* Las cajas ocuparán el 100% en pantallas pequeñas */
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Ajuste del tamaño del título */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .seccion-contenedor {
+        padding: 10px; /* Reducción de espacio interno en pantallas muy pequeñas */
+    }
 }
