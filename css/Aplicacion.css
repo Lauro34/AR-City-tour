@@ -1,86 +1,73 @@
-/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
 body {
+    background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Cambiado a min-height para evitar problemas en dispositivos con barras de navegación */
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    padding: 1rem; /* Añadimos un padding para dar espacio en pantallas más pequeñas */
-    box-sizing: border-box; /* Asegura que el padding no expanda el tamaño del contenedor */
+    height: 100vh;
 }
 
-/* Estilos del contenedor */
-.contenedor {
-    text-align: center;
+.login-container {
     background-color: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 500px; /* Limitamos el ancho máximo del contenedor */
-    width: 100%; /* El contenedor ocupa el 100% del ancho disponible */
-    box-sizing: border-box; /* Asegura que el padding no desborde el contenedor */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
 }
 
-/* Estilos del título (h1) */
 h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
 }
 
-/* Estilos del párrafo (p) */
-p {
-    font-size: 1rem;
-    margin-bottom: 2rem;
+label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 5px;
 }
 
-/* Estilos del botón (enlace) */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.checkbox-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
 a {
-    background-color: #333;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1rem;
-    text-decoration: none; /* Elimina el subrayado del enlace */
-    display: inline-block; /* Hace que el botón respete su padding y tamaño */
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
 }
 
-/* Efecto hover para el botón */
 a:hover {
-    background-color: #555;
+    color: #0056b3;
+    text-decoration: underline;
 }
 
-/* Media Queries para pantallas más pequeñas (smartphones y tablets) */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 1.8rem; /* Tamaño de fuente reducido para pantallas más pequeñas */
-    }
-
-    p {
-        font-size: 1rem; /* Tamaño de fuente ligeramente más pequeño */
-    }
-
-    a {
-        font-size: 0.9rem; /* Reducimos el tamaño del botón */
-        padding: 0.6rem 1.2rem; /* Ajustamos el padding del botón */
-    }
-}
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.5rem; /* Tamaño de fuente más pequeño para pantallas muy pequeñas */
-    }
-
-    p {
-        font-size: 0.9rem; /* Reducimos el tamaño de los párrafos */
-    }
-
-    a {
-        font-size: 0.8rem; /* Tamaño más pequeño para botones */
-        padding: 0.5rem 1rem; /* Ajustamos más el padding */
-    }
+p#inicio {
+    margin-top: 30px;
+    color: #777;
+    font-size: 12px;
 }
