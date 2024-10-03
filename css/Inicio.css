@@ -8,11 +8,12 @@
 
 /* Aplica estilos al cuerpo de la página */
 body {
-    background-color: #f4f4f4; /* Fondo gris claro */
+    background-image: url("/Materiales/Fondo\ de\ la\ pantalla\ de\ aplicacion.avif"); /* Imagen de fondo */
     display: flex; /* Flexbox para alinear el contenido */
     justify-content: center; /* Centra el contenido horizontalmente */
     align-items: center; /* Centra el contenido verticalmente */
     height: 100vh; /* Ocupa toda la altura de la ventana */
+    background-size: cover;
 }
 
 /* Estilos para el contenedor principal */
@@ -70,4 +71,22 @@ h1 {
 /* Estilos para el texto debajo del ícono (Mapa y Cámara) */
 h2 {
     font-size: 18px; /* Tamaño de texto moderado */
+}
+.btn-inicio {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-inicio:hover {
+    background-color: #2980b9;
 }
