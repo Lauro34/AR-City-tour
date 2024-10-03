@@ -8,7 +8,7 @@
 
 /* Aplica estilos al cuerpo de la página */
 body {
-    background-image: url("/Materiales/Fondo\ de\ la\ pantalla\ de\ aplicacion.avif"); /* Imagen de fondo */
+    background-image: url("/Materiales/photo-1477959858617-67f85cf4f1df.avif"); /* Imagen de fondo */
     display: flex; /* Flexbox para alinear el contenido */
     justify-content: center; /* Centra el contenido horizontalmente */
     align-items: center; /* Centra el contenido verticalmente */
