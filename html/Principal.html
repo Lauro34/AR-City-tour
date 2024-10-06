@@ -15,25 +15,21 @@
 
     <link rel="stylesheet" href="/css/Principal.css">
     <!-- Enlace a la hoja de estilos CSS externa que definirá el diseño de la página -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- Inicio del cuerpo del documento HTML, donde se define todo el contenido visible de la página -->
-
-    <nav>
-        <!-- Inicio del elemento de navegación, donde se encuentran los enlaces de la página -->
-        <ul>
-            <!-- Lista desordenada para los enlaces de navegación -->
-            <li><a href="Principal.html">Inicio</a></li>
-            <!-- Elemento de lista con un enlace a la página de inicio -->
-            <li><a href="Informacion.html">Información</a></li>
-            <!-- Elemento de lista con un enlace a la sección de información -->
-            <li><a href="Aplicacion.html">Aplicación</a></li>
-            <!-- Elemento de lista con un enlace a la sección de la aplicación -->
-            <li><a href="Nosotros.html">Nosotros</a></li>
-            <!-- Elemento de lista con un enlace a la sección de nosotros -->
-        </ul>
-    </nav>
+    <div class="container">
+        <header class="d-flex justify-content-center py-3">
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="/html/Principal.html" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="/html/Informacion.html" class="nav-link">Informacion</a></li>
+            <li class="nav-item"><a href="/html/Aplicacion.html" class="nav-link">Aplicacion</a></li>
+            <li class="nav-item"><a href="/html/Nosotros.html" class="nav-link">Nosotros</a></li>
+          </ul>
+        </header>
+      </div>
 
     <header>
         <!-- Encabezado de la página donde se puede colocar un logo o imagen -->
@@ -123,6 +119,8 @@
 
     <script src="/js/Principal.js"></script>
     <!-- Enlace al archivo de JavaScript externo -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
 <!-- Fin del documento HTML -->
