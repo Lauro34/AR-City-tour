@@ -31,7 +31,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background-color: #ff5733; /* Color de fondo cuando pasas el cursor */
+    color: white; /* Color del texto cuando pasas el cursor */
 }
 
 /* Estilos del encabezado */
