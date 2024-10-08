@@ -5,35 +5,56 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-
-/* Estilos de navegación */
-nav {
-    background-color: #333;
-    padding: 1rem;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
+/* Estilo general para centrar el contenido */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilo para el header */
+  header {
+    background-color: #f8f9fa; /* Color de fondo del header */
+    border-bottom: 1px solid #dee2e6; /* Línea debajo del header */
+    padding: 10px 0;
+  }
+  
+  /* Estilo para el menú de navegación */
+  .nav {
+    list-style: none; /* Elimina los puntos de las listas */
     padding: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Para que el menú se ajuste mejor en pantallas pequeñas */
-}
-
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
+    margin: 0;
+    display: flex; /* Coloca los elementos uno al lado del otro */
+    justify-content: center; /* Centra horizontalmente */
+  }
+  
+  /* Estilo para los elementos del menú */
+  .nav-item {
+    margin: 0 15px; /* Espaciado entre los ítems del menú */
+  }
+  
+  /* Estilo para los enlaces */
+  .nav-link {
+    text-decoration: none; /* Elimina el subrayado */
+    color: #007bff; /* Color del texto */
+    padding: 10px 15px; /* Espaciado dentro de cada ítem */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave */
+  }
+  
+  /* Cambio de color al pasar el cursor */
+  .nav-link:hover {
+    background-color: #e9ecef; /* Fondo al hacer hover */
+    color: #0056b3; /* Cambio de color del texto al pasar el cursor */
+  }
+  
+  /* Estilo para el ítem activo */
+  .nav-link.active {
+    background-color: #007bff; /* Color de fondo del ítem activo */
+    color: #fff; /* Color de texto del ítem activo */
+  }
+  
 
 /* Estilos del pie de página */
 footer {
