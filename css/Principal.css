@@ -5,6 +5,10 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+/* Aplica el color #06141B a las etiquetas de texto comunes */
+body, h1, h2, h3, h4, h5, h6, p, a, li, span, strong, em, blockquote, label {
+    color: #06141B;
+}  
 /* Estilo general para centrar el contenido */
 .container {
     width: 100%;
