@@ -18,10 +18,8 @@ body {
 
 /* Estilos para el contenedor principal */
 .main-container {
-    background-color: white; /* Fondo blanco */
     padding: 30px; /* Espaciado interno alrededor del contenido */
     border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
     width: 320px; /* Ancho del contenedor */
     text-align: center; /* Centra el texto dentro del contenedor */
 }
@@ -30,7 +28,6 @@ body {
 h1 {
     font-size: 28px; /* Tamaño del texto */
     margin-bottom: 30px; /* Margen inferior para separar del resto del contenido */
-    color: #333; /* Color de texto gris oscuro */
 }
 
 /* Estilos para las opciones de navegación */
@@ -46,19 +43,14 @@ h1 {
     flex-direction: column; /* Apila los íconos y el texto verticalmente */
     align-items: center; /* Centra los elementos */
     text-decoration: none; /* Elimina el subrayado de los enlaces */
-    color: #333; /* Color de texto gris oscuro */
     width: 45%; /* Ancho de cada opción como 45% del contenedor */
     padding: 20px; /* Espaciado interno */
-    background-color: #f9f9f9; /* Fondo gris claro */
     border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera para efecto 3D */
     transition: background-color 0.3s, transform 0.3s; /* Suaviza las transiciones de color y escala al hacer hover */
 }
 
 /* Cambios al pasar el ratón sobre la opción */
 .option:hover {
-    background-color: #007bff; /* Fondo azul cuando el ratón pasa sobre la opción */
-    color: white; /* Cambia el color del texto a blanco */
     transform: scale(1.05); /* Agranda ligeramente la opción */
 }
 
@@ -76,8 +68,6 @@ h2 {
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: #3498db;
-    color: white;
     border: none;
     padding: 15px 30px;
     text-align: center;
@@ -86,7 +76,33 @@ h2 {
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
-
-.btn-inicio:hover {
-    background-color: #2980b9;
-}
+/* Color de texto general */
+body, h1, h2, h3, h4, h5, h6, p, a, li, span, strong, em, blockquote, label {
+    color: #06141B;
+  }
+  
+  /* Color primario (para títulos y encabezados importantes) */
+  h1, h2, h3 {
+    color: #253745;
+  }
+  
+  /* Color secundario (para subtítulos y secciones menos importantes) */
+  h4, h5, h6, p, li, blockquote {
+    color: #4A5C6A;
+  }
+  
+  /* Color acentuado (para enlaces, botones, u otros elementos importantes) */
+  a, strong, em, .btn {
+    color: #9BA8AB;
+  }
+  
+  /* Color de fondo del contenido general */
+  body {
+    background-color: #CCD0CF;
+  }
+  
+  /* Fondo del encabezado */
+  header {
+    background-color: #11212D;
+  }
+  

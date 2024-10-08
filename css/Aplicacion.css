@@ -6,7 +6,6 @@
 }
 
 body {
-    background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,10 +13,8 @@ body {
 }
 
 .login-container {
-    background-color: white;
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     width: 300px;
     text-align: center;
 }
@@ -25,7 +22,6 @@ body {
 h1 {
     font-size: 24px;
     margin-bottom: 20px;
-    color: #333;
 }
 
 label {
@@ -39,7 +35,6 @@ input[type="text"], input[type="password"] {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
@@ -58,16 +53,43 @@ a {
     display: block;
     margin-top: 10px;
     text-decoration: none;
-    color: #007bff;
 }
 
 a:hover {
-    color: #0056b3;
     text-decoration: underline;
 }
 
 p#inicio {
     margin-top: 30px;
-    color: #777;
     font-size: 12px;
 }
+/* Color de texto general */
+body, h1, h2, h3, h4, h5, h6, p, a, li, span, strong, em, blockquote, label {
+    color: #06141B;
+  }
+  
+  /* Color primario (para títulos y encabezados importantes) */
+  h1, h2, h3 {
+    color: #253745;
+  }
+  
+  /* Color secundario (para subtítulos y secciones menos importantes) */
+  h4, h5, h6, p, li, blockquote {
+    color: #4A5C6A;
+  }
+  
+  /* Color acentuado (para enlaces, botones, u otros elementos importantes) */
+  a, strong, em, .btn {
+    color: #9BA8AB;
+  }
+  
+  /* Color de fondo del contenido general */
+  body {
+    background-color: #CCD0CF;
+  }
+  
+  /* Fondo del encabezado */
+  header {
+    background-color: #11212D;
+  }
+  

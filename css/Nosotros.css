@@ -15,8 +15,6 @@ body {
   
   /* Estilo para el header */
   header {
-    background-color: #f8f9fa; /* Color de fondo del header */
-    border-bottom: 1px solid #dee2e6; /* Línea debajo del header */
     padding: 10px 0;
   }
   
@@ -37,30 +35,15 @@ body {
   /* Estilo para los enlaces */
   .nav-link {
     text-decoration: none; /* Elimina el subrayado */
-    color: #007bff; /* Color del texto */
     padding: 10px 15px; /* Espaciado dentro de cada ítem */
     border-radius: 5px; /* Bordes redondeados */
     transition: background-color 0.3s ease; /* Transición suave */
   }
-  
-  /* Cambio de color al pasar el cursor */
-  .nav-link:hover {
-    background-color: #e9ecef; /* Fondo al hacer hover */
-    color: #0056b3; /* Cambio de color del texto al pasar el cursor */
-  }
-  
-  /* Estilo para el ítem activo */
-  .nav-link.active {
-    background-color: #007bff; /* Color de fondo del ítem activo */
-    color: #fff; /* Color de texto del ítem activo */
-  }
-  
+
 
 /* Estilos del pie de página */
 footer {
     text-align: center;
-    background-color: #333;
-    color: white;
     padding: 1rem 0;
     position: fixed;
     bottom: 0;
@@ -72,23 +55,18 @@ footer {
 .Informacion {
     max-width: 800px;
     margin: 0 auto;
-    background-color: #ffffff;
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
 }
 
 .Informacion h2 {
-    color: #2c3e50;
     font-size: 28px;
     margin-top: 0;
-    border-bottom: 2px solid #000000;
     padding-bottom: 10px;
 }
 
 .Informacion p {
-    color: #555;
     font-size: 18px;
     line-height: 1.8;
     margin-bottom: 30px;
@@ -136,3 +114,33 @@ footer {
         font-size: 14px; /* Texto más pequeño en pantallas pequeñas */
     }
 }
+/* Color de texto general */
+body, h1, h2, h3, h4, h5, h6, p, a, li, span, strong, em, blockquote, label {
+    color: #06141B;
+  }
+  
+  /* Color primario (para títulos y encabezados importantes) */
+  h1, h2, h3 {
+    color: #253745;
+  }
+  
+  /* Color secundario (para subtítulos y secciones menos importantes) */
+  h4, h5, h6, p, li, blockquote {
+    color: #4A5C6A;
+  }
+  
+  /* Color acentuado (para enlaces, botones, u otros elementos importantes) */
+  a, strong, em, .btn {
+    color: #9BA8AB;
+  }
+  
+  /* Color de fondo del contenido general */
+  body {
+    background-color: #CCD0CF;
+  }
+  
+  /* Fondo del encabezado */
+  header {
+    background-color: #11212D;
+  }
+  
