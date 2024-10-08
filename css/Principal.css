@@ -5,10 +5,36 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-/* Aplica el color #06141B a las etiquetas de texto comunes */
+/* Color de texto general */
 body, h1, h2, h3, h4, h5, h6, p, a, li, span, strong, em, blockquote, label {
     color: #06141B;
-}  
+  }
+  
+  /* Color primario (para títulos y encabezados importantes) */
+  h1, h2, h3 {
+    color: #253745;
+  }
+  
+  /* Color secundario (para subtítulos y secciones menos importantes) */
+  h4, h5, h6, p, li, blockquote {
+    color: #4A5C6A;
+  }
+  
+  /* Color acentuado (para enlaces, botones, u otros elementos importantes) */
+  a, strong, em, .btn {
+    color: #9BA8AB;
+  }
+  
+  /* Color de fondo del contenido general */
+  body {
+    background-color: #CCD0CF;
+  }
+  
+  /* Fondo del encabezado */
+  header {
+    background-color: #11212D;
+  }
+   
 /* Estilo general para centrar el contenido */
 .container {
     width: 100%;
